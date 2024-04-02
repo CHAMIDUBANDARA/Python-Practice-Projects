@@ -8,8 +8,12 @@ root.title("Google Translator")
 root.geometry("1080x400")
 
 #icon
-image_icon = PhotoImage(file="google.png")
-root.iconphoto(False,image_icon)
+try:
+    image_icon = PhotoImage(file=r"C:\Users\Lenovo\Desktop\Google Translator\google.png")
+    label = Label(root, image=image_icon)
+    label.pack()
+except Exception as e:
+    print("Error loading the image:", e)
 
 language = googletrans.LANGUAGES
 languageV = list(language.values())
