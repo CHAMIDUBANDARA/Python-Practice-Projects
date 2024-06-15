@@ -14,6 +14,7 @@ def label_change():
     label2.configure(text=c1)
     root.after(1000.label_change)
 
+
 def translate_now():
     global language
     try:
@@ -53,6 +54,8 @@ lang1 = language.keys()
 combol = ttk.Combobox(root,values=languageV,font="Roboto 14",state="r")
 combol.place(x=110,y=20)
 combol.set("ENGLISH")
+
+
 
 label1=Label(root,text="ENGLISH",font="segoe 30 bold", bg="white",width=18,bd=5,relief=GROOVE)
 label1.place(x=10,y=50)
